@@ -1,0 +1,429 @@
+/* =========================
+SERVICES PAGE
+========================= */
+
+.services-page {
+    background: var(--pink);
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.services-hero {
+    min-height: 80vh;
+    padding: 110px 8%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+    border-bottom: 2px solid var(--black);
+}
+
+.services-hero-content {
+    max-width: 800px;
+}
+
+.services-hero h1 {
+    margin: 18px 0 30px;
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.85;
+    letter-spacing: -0.07em;
+}
+
+.services-hero h1 span {
+    display: block;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--magenta);
+}
+
+.services-hero p {
+    max-width: 560px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+    HERO DECORATION
+========================= */
+
+.services-hero-decoration {
+    position: relative;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-big-symbol {
+    width: 330px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 48% 52% 45% 55%;
+
+    box-shadow: 10px 10px 0 var(--black);
+
+    font-size: 9rem;
+    color: var(--magenta);
+
+    transform: rotate(-7deg);
+}
+
+.services-sticker {
+    position: absolute;
+    z-index: 2;
+
+    padding: 12px 18px;
+
+    border: 2px solid var(--black);
+    box-shadow: 5px 5px 0 var(--black);
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.8rem;
+}
+
+.sticker-pink {
+    top: 15%;
+    left: 5%;
+    background: var(--pink);
+    transform: rotate(-6deg);
+}
+
+.sticker-yellow {
+    right: 0;
+    bottom: 15%;
+    background: var(--yellow-light);
+    transform: rotate(5deg);
+}
+
+
+/* =========================
+    SERVICES LIST
+========================= */
+
+.services-list {
+    background: var(--yellow-light);
+    padding: 120px 8%;
+    border-bottom: 2px solid var(--black);
+}
+
+.services-heading {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.services-heading h2 {
+    margin: 15px 0 0;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+}
+
+.services-heading h2 span {
+    display: block;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--magenta);
+}
+
+
+/* =========================
+    SERVICE CARDS
+========================= */
+
+.services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    min-height: 530px;
+
+    padding: 30px;
+
+    border: 2px solid var(--black);
+    border-radius: var(--radius-md);
+
+    box-shadow: 7px 7px 0 var(--black);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 11px 11px 0 var(--magenta);
+}
+
+.service-pink {
+    background: var(--pink);
+}
+
+.service-yellow {
+    background: var(--white);
+}
+
+.service-purple {
+    background: var(--purple);
+}
+
+.service-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-number {
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+}
+
+.service-icon {
+    font-size: 2rem;
+}
+
+.service-card h3 {
+    margin: 50px 0 20px;
+
+    font-size: 2.5rem;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+}
+
+.service-card h3 span {
+    display: block;
+
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 400;
+
+    color: var(--magenta);
+}
+
+.service-card p {
+    line-height: 1.55;
+    margin-bottom: 25px;
+}
+
+.service-card ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    border-top: 1px solid var(--black);
+}
+
+.service-card li {
+    padding: 11px 0;
+
+    border-bottom: 1px solid var(--black);
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.72rem;
+}
+
+.service-card li::before {
+    content: "✦";
+    margin-right: 8px;
+    color: var(--magenta);
+}
+
+.service-tag {
+    width: fit-content;
+
+    margin-top: auto;
+    padding: 7px 11px;
+
+    border: 1.5px solid var(--black);
+    border-radius: 999px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+
+    background: var(--white);
+}
+
+
+/* =========================
+    CTA
+========================= */
+
+.services-cta {
+    position: relative;
+
+    padding: 150px 8%;
+
+    text-align: center;
+
+    background: var(--purple);
+    border-bottom: 2px solid var(--black);
+
+    overflow: hidden;
+}
+
+.services-cta h2 {
+    max-width: 900px;
+    margin: 20px auto;
+
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+}
+
+.services-cta h2 span {
+    display: block;
+
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 400;
+
+    color: var(--magenta);
+}
+
+.services-cta p {
+    max-width: 550px;
+    margin: 30px auto;
+
+    line-height: 1.6;
+}
+
+.services-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 15px;
+    padding: 16px 25px;
+
+    background: var(--black);
+    color: var(--white);
+
+    border: 2px solid var(--black);
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.services-button:hover {
+    background: var(--magenta);
+    transform: translateY(-3px);
+}
+
+.cta-decoration {
+    position: absolute;
+
+    top: 40px;
+    left: 10%;
+
+    font-size: 4rem;
+    color: var(--magenta);
+
+    transform: rotate(15deg);
+}
+
+.cta-code {
+    position: absolute;
+
+    right: 8%;
+    bottom: 40px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+}
+
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .services-hero {
+    grid-template-columns: 1fr;
+    padding-top: 90px;
+    }
+
+    .services-hero-decoration {
+    min-height: 350px;
+    }
+
+    .services-grid {
+    grid-template-columns: 1fr;
+    }
+
+    .service-card {
+    min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-hero {
+    padding: 80px 24px;
+    }
+
+    .services-hero h1 {
+    font-size: 4rem;
+    }
+
+    .services-hero-decoration {
+    min-height: 300px;
+    }
+
+    .services-big-symbol {
+    width: 230px;
+    height: 230px;
+    font-size: 6rem;
+    }
+
+    .services-list {
+    padding: 80px 24px;
+    }
+
+    .services-heading h2 {
+    font-size: 3.2rem;
+    }
+
+    .services-card {
+    padding: 24px;
+    }
+
+    .services-cta {
+    padding: 100px 24px;
+    }
+
+    .services-cta h2 {
+    font-size: 3.5rem;
+    }
+
+    .cta-decoration,
+    .cta-code {
+    display: none;
+    }
+
+}

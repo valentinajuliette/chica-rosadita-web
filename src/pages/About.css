@@ -1,0 +1,491 @@
+/* =========================================
+    ABOUT HERO
+   ========================================= */
+
+.about-page {
+    background: var(--pink-light);
+}
+
+.about-hero {
+    min-height: calc(100vh - 100px);
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.about-hero-content h1 {
+    margin: 20px 0 0;
+
+    font-size: clamp(4rem, 8vw, 8rem);
+
+    line-height: 0.88;
+
+    letter-spacing: -0.07em;
+}
+
+.about-hero-content h1 span {
+    display: block;
+
+    margin-top: 15px;
+
+    font-family: "DM Serif Display", serif;
+
+    font-style: italic;
+    font-weight: 400;
+
+    color: var(--magenta);
+
+    transform: rotate(-2deg);
+}
+
+.about-intro {
+    max-width: 600px;
+
+    margin-top: 45px;
+
+    font-size: 1.4rem;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+    FOTO
+   ========================================= */
+
+.about-photo-wrapper {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0 auto;
+}
+
+.about-photo {
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+
+    border: 3px solid var(--black);
+
+    border-radius: 40% 40% 35% 35%;
+
+    box-shadow: 10px 10px 0 var(--black);
+
+    overflow: hidden;
+}
+
+.about-photo span {
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.8rem;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================================
+    STICKERS
+   ========================================= */
+
+.photo-sticker {
+    position: absolute;
+
+    padding: 12px 16px;
+
+    border: 2px solid var(--black);
+
+    box-shadow: 4px 4px 0 var(--black);
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.75rem;
+}
+
+.sticker-pink {
+    top: 8%;
+    left: -40px;
+
+    background: var(--pink);
+
+    transform: rotate(-8deg);
+}
+
+.sticker-yellow {
+    right: -30px;
+    bottom: 12%;
+
+    background: var(--yellow-light);
+
+    transform: rotate(6deg);
+}
+
+
+/* =========================================
+    STORY
+   ========================================= */
+
+.about-story {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 140px 8%;
+
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    gap: 80px;
+}
+
+.about-story-label {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+}
+
+.about-story-label span:first-child {
+    color: var(--magenta);
+
+    font-size: 1.2rem;
+}
+
+.about-story-content {
+    max-width: 850px;
+}
+
+.about-story-content h2 {
+    margin: 0;
+
+    font-size: clamp(3rem, 6vw, 6rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.06em;
+}
+
+.about-story-content h2 span {
+    display: block;
+
+    font-family: "DM Serif Display", serif;
+
+    font-style: italic;
+    font-weight: 400;
+
+    color: var(--magenta);
+}
+
+.about-story-content p {
+    max-width: 700px;
+
+    margin-top: 35px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+    LO QUE HAGO
+   ========================================= */
+
+.about-what-i-do {
+    padding: 120px 8%;
+
+    background: var(--yellow-light);
+
+    border-top: 2px solid var(--black);
+}
+
+.about-section-heading {
+    max-width: 1200px;
+
+    margin: 0 auto 60px;
+}
+
+.about-section-heading h2 {
+    margin: 15px 0 0;
+
+    font-size: clamp(3rem, 6vw, 6rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.06em;
+}
+
+.about-section-heading h2 span {
+    display: block;
+
+    font-family: "DM Serif Display", serif;
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    color: var(--magenta);
+}
+
+
+/* =========================================
+    PILARES
+   ========================================= */
+
+.about-pillars {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+.about-pillar {
+    min-height: 400px;
+
+    padding: 28px;
+
+    border: 2px solid var(--black);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: 6px 6px 0 var(--black);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar-pink {
+    background: var(--pink);
+}
+
+.pillar-yellow {
+    background: var(--white);
+}
+
+.pillar-purple {
+    background: var(--purple);
+}
+
+.pillar-number {
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.7rem;
+}
+
+.pillar-icon {
+    margin-top: 45px;
+
+    font-size: 3rem;
+}
+
+.about-pillar h3 {
+    margin: 20px 0 0;
+
+    font-size: 2rem;
+
+    letter-spacing: -0.04em;
+}
+
+.about-pillar p {
+    margin-top: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+    MANIFIESTO
+   ========================================= */
+
+.about-manifesto {
+    min-height: 550px;
+
+    padding: 100px 8%;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-manifesto p {
+    max-width: 1000px;
+
+    margin: 0;
+
+    font-size: clamp(3rem, 7vw, 7rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.06em;
+}
+
+.about-manifesto p span {
+    color: var(--magenta);
+
+    font-family: "DM Serif Display", serif;
+
+    font-style: italic;
+}
+
+.manifesto-decoration {
+    position: absolute;
+
+    top: 15%;
+    left: 10%;
+
+    color: var(--pink);
+
+    font-size: 4rem;
+}
+
+.manifesto-tech {
+    margin-top: 45px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.8rem;
+
+    color: var(--yellow-light);
+}
+
+
+/* =========================================
+    SOCIAL
+   ========================================= */
+
+.about-social {
+    padding: 130px 8%;
+
+    text-align: center;
+}
+
+.about-social h2 {
+    margin: 20px 0 0;
+
+    font-size: clamp(3rem, 7vw, 7rem);
+
+    letter-spacing: -0.06em;
+}
+
+.about-social p {
+    margin: 20px auto 30px;
+
+    font-size: 1.1rem;
+}
+
+.social-button {
+    display: inline-flex;
+
+    padding: 14px 22px;
+
+    background: var(--black);
+
+    color: var(--white);
+
+    border-radius: 999px;
+
+    font-weight: 600;
+
+    box-shadow: 5px 5px 0 var(--magenta);
+
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.social-button:hover {
+    transform: translate(2px, 2px);
+
+    box-shadow: 2px 2px 0 var(--magenta);
+}
+
+
+/* =========================================
+    RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .about-hero {
+    min-height: auto;
+
+    padding: 80px 24px;
+
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+    }
+
+    .about-hero-content h1 {
+    font-size: clamp(4rem, 17vw, 6rem);
+    }
+
+    .about-photo-wrapper {
+    max-width: 350px;
+    }
+
+    .about-story {
+    padding: 90px 24px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+    }
+
+    .about-pillars {
+    grid-template-columns: 1fr;
+    }
+
+    .about-what-i-do {
+    padding: 90px 24px;
+    }
+
+    .about-manifesto {
+    min-height: 450px;
+
+    padding: 80px 24px;
+    }
+
+    .about-social {
+    padding: 90px 24px;
+    }
+
+}

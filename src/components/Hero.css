@@ -1,0 +1,250 @@
+.hero {
+    min-height: calc(100vh - 100px);
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8% 120px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 10;
+}
+
+/* ---------- etiqueta tech ---------- */
+
+.hero-label {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    background: var(--white);
+
+    border: 2px solid var(--black);
+    border-radius: 999px;
+
+    padding: 8px 14px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.8rem;
+
+    box-shadow: 3px 3px 0 var(--black);
+
+    margin-bottom: 30px;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    background: var(--magenta);
+    border-radius: 50%;
+}
+
+/* ---------- título ---------- */
+
+.hero h1 {
+    max-width: 900px;
+
+    margin: 0;
+
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.88;
+    letter-spacing: -0.07em;
+    font-weight: 800;
+}
+
+.hero-highlight {
+    display: block;
+
+    width: fit-content;
+
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-weight: 400;
+
+    color: var(--magenta);
+
+    transform: rotate(-2deg);
+
+    margin-top: 18px;
+}
+
+/* ---------- descripción ---------- */
+
+.hero-description {
+    max-width: 620px;
+
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    margin: 45px 0 30px;
+}
+
+/* ---------- acciones ---------- */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    background: var(--black);
+    color: var(--white);
+
+    border: 2px solid var(--black);
+    border-radius: 999px;
+
+    padding: 15px 22px;
+
+    font-weight: 600;
+
+    box-shadow: 5px 5px 0 var(--magenta);
+
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--magenta);
+}
+
+.hero-note {
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+}
+
+/* ---------- stickers ---------- */
+
+.tech-sticker {
+    position: absolute;
+
+    z-index: 2;
+
+    background: var(--yellow-light);
+
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+
+    padding: 12px 16px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.8rem;
+}
+
+.sticker-code {
+    top: 25%;
+    right: 7%;
+
+    transform: rotate(7deg);
+}
+
+.sticker-ai {
+    right: 5%;
+    bottom: 8%;
+
+    background: var(--purple);
+
+    transform: rotate(-5deg);
+}
+
+.sticker-ai span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 0.65rem;
+}
+
+/* ---------- decoración ---------- */
+
+.hero-decoration {
+    position: absolute;
+    user-select: none;
+}
+
+.star-one {
+    top: 18%;
+    left: 4%;
+
+    font-size: 3rem;
+
+    color: var(--magenta);
+}
+
+.star-two {
+    right: 35%;
+    bottom: 12%;
+
+    font-size: 2rem;
+}
+
+.flower {
+    top: 16%;
+    right: 27%;
+
+    font-size: 4rem;
+
+    color: var(--purple);
+
+    transform: rotate(12deg);
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+    min-height: auto;
+
+    padding:
+        80px 24px
+        120px;
+    }
+
+    .hero h1 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+    }
+
+    .hero-description {
+    font-size: 1.05rem;
+    }
+
+    .tech-sticker {
+    display: none;
+    }
+
+    .flower {
+    top: 4%;
+    right: 8%;
+
+    font-size: 2.5rem;
+    }
+
+    .star-one {
+    display: none;
+    }
+
+    .star-two {
+    right: 10%;
+    bottom: 5%;
+    }
+
+}

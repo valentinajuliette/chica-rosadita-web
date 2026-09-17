@@ -1,0 +1,128 @@
+.opportunity-card {
+    background: var(--white);
+
+    border: 2px solid var(--black);
+    border-radius: var(--radius-md);
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 390px;
+
+    box-shadow: 6px 6px 0 var(--black);
+
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.opportunity-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 10px 10px 0 var(--magenta);
+}
+
+/* Etiquetas */
+
+.opportunity-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.opportunity-topic,
+.opportunity-women {
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    border: 1.5px solid var(--black);
+    border-radius: 999px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+}
+
+.opportunity-topic {
+    background: var(--yellow-light);
+}
+
+.opportunity-women {
+    background: var(--pink);
+}
+
+/* Contenido */
+
+.opportunity-content {
+    flex: 1;
+    margin-top: 30px;
+}
+
+.opportunity-content h3 {
+    margin: 0;
+
+    font-size: 1.7rem;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.opportunity-organization {
+    margin: 10px 0 0;
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.75rem;
+
+    color: var(--magenta);
+}
+
+.opportunity-description {
+    margin-top: 20px;
+
+    line-height: 1.5;
+
+    color: var(--text-secondary);
+}
+
+/* Información */
+
+.opportunity-info {
+    display: flex;
+    gap: 15px;
+
+    padding-top: 20px;
+    margin-top: 20px;
+
+    border-top: 1px solid var(--black);
+
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+}
+
+/* Botón */
+
+.opportunity-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    padding: 12px 15px;
+
+    background: var(--black);
+    color: var(--white);
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: background 0.2s ease;
+}
+
+.opportunity-button:hover {
+    background: var(--magenta);
+}

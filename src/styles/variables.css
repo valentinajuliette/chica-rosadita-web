@@ -1,0 +1,22 @@
+:root {
+    /* 🌸 Chica Rosadita */
+
+    --pink-light: #FDD5FD;
+    --yellow-light: #FFF8C2;
+    --purple: #AD88FC;
+    --pink: #FFABE1;
+    --magenta: #D300C5;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Texto */
+    --text-primary: var(--black);
+    --text-secondary: #4A4A4A;
+
+    /* UI */
+    --border: var(--black);
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
