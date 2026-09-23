@@ -1,4 +1,5 @@
 .opportunity-card {
+
     background: var(--white);
 
     border: 2px solid var(--black);
@@ -14,18 +15,24 @@
     box-shadow: 6px 6px 0 var(--black);
 
     transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .opportunity-card:hover {
+
     transform: translate(-3px, -3px);
+
     box-shadow: 10px 10px 0 var(--magenta);
 }
 
-/* Etiquetas */
+
+/* =========================================
+   ETIQUETAS
+   ========================================= */
 
 .opportunity-top {
+
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -36,6 +43,7 @@
 
 .opportunity-topic,
 .opportunity-women {
+
     width: fit-content;
 
     padding: 6px 10px;
@@ -55,22 +63,30 @@
     background: var(--pink);
 }
 
-/* Contenido */
+
+/* =========================================
+   CONTENIDO
+   ========================================= */
 
 .opportunity-content {
+
     flex: 1;
+
     margin-top: 30px;
 }
 
 .opportunity-content h3 {
+
     margin: 0;
 
     font-size: 1.7rem;
     line-height: 1.05;
+
     letter-spacing: -0.04em;
 }
 
 .opportunity-organization {
+
     margin: 10px 0 0;
 
     font-family: "DM Mono", monospace;
@@ -80,6 +96,7 @@
 }
 
 .opportunity-description {
+
     margin-top: 20px;
 
     line-height: 1.5;
@@ -87,10 +104,15 @@
     color: var(--text-secondary);
 }
 
-/* Información */
+
+/* =========================================
+   INFORMACIÓN
+   ========================================= */
 
 .opportunity-info {
+
     display: flex;
+
     gap: 15px;
 
     padding-top: 20px;
@@ -102,10 +124,32 @@
     font-size: 0.7rem;
 }
 
-/* Botón */
+
+/* =========================================
+   FECHA LÍMITE
+   ========================================= */
+
+.opportunity-deadline {
+
+    margin: 15px 0 0;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    color: var(--magenta);
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
 
 .opportunity-button {
+
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 
@@ -120,9 +164,11 @@
 
     font-weight: 600;
 
-    transition: background 0.2s ease;
+    transition:
+        background 0.2s ease;
 }
 
 .opportunity-button:hover {
+
     background: var(--magenta);
 }

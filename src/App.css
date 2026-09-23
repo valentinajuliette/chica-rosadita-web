@@ -144,3 +144,44 @@
     }
 
 }
+
+/* VER MÁS OPORTUNIDADES */
+
+.load-more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.load-more-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 999px;
+    box-shadow: 4px 4px 0 var(--black);
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+.load-more-button:hover {
+    background: var(--yellow-light);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--black);
+}
+
+.load-more-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 var(--black);
+}
+
+.load-more-button span {
+    font-size: 1.1rem;
+}
